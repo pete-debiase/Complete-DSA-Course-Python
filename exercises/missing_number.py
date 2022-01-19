@@ -1,5 +1,6 @@
 #!/usr/bin/python
 """Find missing number in integer array of 1 to 100."""
+
 import timeit
 
 # Setup
