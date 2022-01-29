@@ -21,9 +21,7 @@
     + [When to Use/Avoid](#when-to-useavoid)
 - [Section 8: Python Lists](#section-8-python-lists)
     + [Lists versus Arrays](#lists-versus-arrays)
-    + [Operations](#operations)
 - [Section 12: Dictionaries](#section-12-dictionaries)
-    + [Operations](#operations-1)
 
 <!-- /MarkdownTOC -->
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
@@ -233,7 +231,7 @@ def f(n):
     from array import *
     my_array = array(typecode, [initializers]) #
     ```
-- 1D array operations
+- 1D array complexity
     | Operation          |          Time Complexity           | Space Complexity |
     |:-------------------|:----------------------------------:|:----------------:|
     | Creation           |                O(1)                |       O(n)       |
@@ -243,7 +241,7 @@ def f(n):
     | Searching (linear) |                O(n)                |       O(1)       |
     | Deletion           | O(1) (end)<br>O(n) (anywhere else) |       O(1)       |
 
-- 2D array operations
+- 2D array complexity
     | Operation            |           Time Complexity           | Space Complexity |
     |:---------------------|:-----------------------------------:|:----------------:|
     | Creation             |                O(1)                 |      O(mn)       |
@@ -274,16 +272,15 @@ def f(n):
 - Both can be sliced.
 - Arrays optimized for arithmetic operations.
 - Lists can contain elements of different data types.
-
-### Operations
-| Operation          |          Time Complexity           | Space Complexity |
-|:-------------------|:----------------------------------:|:----------------:|
-| Creation           |                O(1)                |       O(n)       |
-| Insertion          | O(1) (end)<br>O(n) (anywhere else) |       O(1)       |
-| Accessing          |                O(1)                |       O(1)       |
-| Traversal          |                O(n)                |       O(1)       |
-| Searching (linear) |                O(n)                |       O(1)       |
-| Deletion           | O(1) (end)<br>O(n) (anywhere else) |       O(1)       |
+- Complexity
+    | Operation          |          Time Complexity           | Space Complexity |
+    |:-------------------|:----------------------------------:|:----------------:|
+    | Creation           |                O(1)                |       O(n)       |
+    | Insertion          | O(1) (end)<br>O(n) (anywhere else) |       O(1)       |
+    | Accessing          |                O(1)                |       O(1)       |
+    | Traversal          |                O(n)                |       O(1)       |
+    | Searching (linear) |                O(n)                |       O(1)       |
+    | Deletion           | O(1) (end)<br>O(n) (anywhere else) |       O(1)       |
 
 (Same as 1D arrays)
 
@@ -294,20 +291,21 @@ def f(n):
 - Also known as associative array.
 - If element added to dictionary causes a collision, it's added to the associated index as a linked list.
 - Dictionary versus List
-    | Dictionary                          |                 List                 |
-    |:------------------------------------|:------------------------------------:|
-    | Unordered                           |               Ordered                |
-    | Access via keys                     |           Access via index           |
-    | Collection of key-value pairs       |        Collection of elements        |
+    |             Dictionary              |                 List                 |
+    |:-----------------------------------:|:------------------------------------:|
+    |              Unordered              |               Ordered                |
+    |           Access via keys           |           Access via index           |
+    |    Collection of key-value pairs    |        Collection of elements        |
     | Preferred when you have unique keys | Preferred when you have ordered data |
-    | No duplicate elements               |      Allows duplicate elements       |
+    |        No duplicate elements        |      Allows duplicate elements       |
+- Complexity
+    | Operation          |     Time Complexity      | Space Complexity |
+    |:-------------------|:------------------------:|:----------------:|
+    | Creation           |        O(len(d))         |       O(n)       |
+    | Insertion          | O(1)<br>O(n) (amortized) |       O(1)       |
+    | Accessing          |           O(1)           |       O(1)       |
+    | Traversal          |           O(n)           |       O(1)       |
+    | Searching (linear) |           O(n)           |       O(1)       |
+    | Deletion           |           O(1)           |       O(1)       |
 
-### Operations
-| Operation          |     Time Complexity      | Space Complexity |
-|:-------------------|:------------------------:|:----------------:|
-| Creation           |        O(len(d))         |       O(n)       |
-| Insertion          | O(1)<br>O(n) (amortized) |       O(1)       |
-| Accessing          |           O(1)           |       O(1)       |
-| Traversal          |           O(n)           |       O(1)       |
-| Searching (linear) |           O(n)           |       O(1)       |
-| Deletion           |           O(1)           |       O(1)       |
+<!-- ───────────────────────────────────────────────────────────────────────────── -->
