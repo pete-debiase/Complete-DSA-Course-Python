@@ -22,6 +22,7 @@
 - [Section 8: Python Lists](#section-8-python-lists)
     + [Lists versus Arrays](#lists-versus-arrays)
 - [Section 12: Dictionaries](#section-12-dictionaries)
+- [Section 13: Tuples](#section-13-tuples)
 
 <!-- /MarkdownTOC -->
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
@@ -307,5 +308,25 @@ def f(n):
     | Traversal          |           O(n)           |       O(1)       |
     | Searching (linear) |           O(n)           |       O(1)       |
     | Deletion           |           O(1)           |       O(1)       |
+
+<!-- ───────────────────────────────────────────────────────────────────────────── -->
+
+## Section 13: Tuples
+- **Immutable** sequence of Python objects.
+- Comparable and hashable (has value that remains same during its lifetime).
+- Parentheses are standard but not required (`my_tuple = (1, 2)` rather than `my_tuple = 1, 2`).
+- Stored in contiguous locations in memory.
+- Main difference versus lists is mutability.
+- Tuples generally used for heterogenous data, lists for homogenous data.
+- Iterating through a tuple is faster than iterating through a list.
+- Tuples can be used as keys in dictionaries.
+
+- Operations
+    | Operation          | Time Complexity | Space Complexity |
+    |:-------------------|:---------------:|:----------------:|
+    | Creation           |      O(1)       |       O(n)       |
+    | Accessing          |      O(1)       |       O(1)       |
+    | Traversal          |      O(n)       |       O(1)       |
+    | Searching (linear) |      O(n)       |       O(1)       |
 
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
