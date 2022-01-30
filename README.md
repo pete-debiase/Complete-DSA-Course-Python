@@ -23,6 +23,7 @@
     + [Lists versus Arrays](#lists-versus-arrays)
 - [Section 12: Dictionaries](#section-12-dictionaries)
 - [Section 13: Tuples](#section-13-tuples)
+- [Section 14: Linked Lists](#section-14-linked-lists)
 
 <!-- /MarkdownTOC -->
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
@@ -330,3 +331,11 @@ def f(n):
     | Searching (linear) |      O(n)       |       O(1)       |
 
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
+
+## Section 14: Linked Lists
+- Collection of independent nodes that may contain any type of data, where each node has a reference (link) to the next node.
+- Very similar to a train (has head and tail, cars joined by links)
+- Starts with head, which just has reference to next node.
+- Each node consists of the value of the node and a reference to the next node.
+- The reference/link is the memory location of the target node.
+- Ends with tail that points to last node.
