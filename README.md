@@ -24,6 +24,7 @@
 - [Section 12: Dictionaries](#section-12-dictionaries)
 - [Section 13: Tuples](#section-13-tuples)
 - [Section 14: Linked Lists](#section-14-linked-lists)
+- [+ Circular doubly linked list - same as doubly linked list except first/last node have references to each other](#-circular-doubly-linked-list---same-as-doubly-linked-list-except-firstlast-node-have-references-to-each-other)
 
 <!-- /MarkdownTOC -->
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
@@ -339,3 +340,15 @@ def f(n):
 - Each node consists of the value of the node and a reference to the next node.
 - The reference/link is the memory location of the target node.
 - Ends with tail that points to last node.
+- Not stored contiguously in memory.
+- Versus arrays:
+    + Each element of linked list is an independent object
+    + Variable size - size of linked list is not predefined
+    + Insertion and removal operations in linked list are very efficient
+    + Random access - accessing an element is very efficient in arrays (indexed), in linked list always need to iterate all sequentially
+- Types:
+    + Singly linked list - each element is simply a node plus a reference to the next node
+    + Circular singly linked list - same as singly linked list except last node stores a reference to the first node
+    + Doubly linked list - each node stores reference to previous node and next node
+    + Circular doubly linked list - same as doubly linked list except first/last node have references to each other
+-
