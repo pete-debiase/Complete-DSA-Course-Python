@@ -6,6 +6,9 @@ class Node():
         self.value = value
         self.next = None
 
+    def __str__(self):
+        return f"Value = {self.value}; Next = {self.next.value}"
+
 class SinglyLinkedList():
     def __init__(self):
         self.head = None
