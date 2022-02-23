@@ -24,7 +24,6 @@
 - [Section 12: Dictionaries](#section-12-dictionaries)
 - [Section 13: Tuples](#section-13-tuples)
 - [Section 14: Linked Lists](#section-14-linked-lists)
-- [+ Circular doubly linked list - same as doubly linked list except first/last node have references to each other](#-circular-doubly-linked-list---same-as-doubly-linked-list-except-firstlast-node-have-references-to-each-other)
 
 <!-- /MarkdownTOC -->
 <!-- ───────────────────────────────────────────────────────────────────────────── -->
@@ -323,7 +322,7 @@ def f(n):
 - Iterating through a tuple is faster than iterating through a list.
 - Tuples can be used as keys in dictionaries.
 
-- Operations
+- Complexity
     | Operation          | Time Complexity | Space Complexity |
     |:-------------------|:---------------:|:----------------:|
     | Creation           |      O(1)       |       O(n)       |
@@ -351,4 +350,30 @@ def f(n):
     + Circular singly linked list - same as singly linked list except last node stores a reference to the first node
     + Doubly linked list - each node stores reference to previous node and next node
     + Circular doubly linked list - same as doubly linked list except first/last node have references to each other
--
+
+- Complexity
+    | Operation              | Time Complexity | Space Complexity |
+    |:-----------------------|:---------------:|:----------------:|
+    | Creation               |      O(1)       |       O(1)       |
+    | Insertion              |      O(n)       |       O(1)       |
+    | Searching (linear)     |      O(n)       |       O(1)       |
+    | Traversal              |      O(n)       |       O(1)       |
+    | Deletion (node)        |      O(n)       |       O(1)       |
+    | Deletion (linked list) |      O(1)       |       O(1)       |
+
+- Time complexity (versus array) (Note: some of these don't seem right but were what was presented)
+    | Operation                   |  Array   | Linked List |
+    |:----------------------------|:--------:|:-----------:|
+    | Creation                    |   O(1)   |    O(1)     |
+    | Insertion (first position)  |   O(1)   |    O(1)     |
+    | Insertion (last position)   |   O(1)   |    O(1)     |
+    | Insertion (nth position)    |   O(1)   |    O(n)     |
+    | Searching (linear) unsorted |   O(n)   |    O(n)     |
+    | Searching (linear) sorted   | O(log n) |    O(n)     |
+    | Traversal                   |   O(n)   |    O(n)     |
+    | Deletion (first position)   |   O(1)   |    O(1)     |
+    | Deletion (last position)    |   O(1)   |  O(n)/O(1)  |
+    | Deletion (nth position)     |   O(1)   |    O(n)     |
+    | Deletion (self)             |   O(1)   |  O(n)/O(1)  |
+    | Access nth element          |   O(1)   |    O(n)     |
+
