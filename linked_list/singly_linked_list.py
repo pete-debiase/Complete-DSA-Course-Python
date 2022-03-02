@@ -53,6 +53,16 @@ class SinglyLinkedList():
         else:
             [print(node.value) for node in self]
 
+    def reverse(self):
+        head, prev = self.head, None
+        while head:
+            temp = head
+            head = head.next
+            temp.next = prev
+            prev = temp
+        self.tail = self.head
+        self.head = prev
+
     def search_linear(self, target_value):
         if self.head is None:
             print("Linked list is empty.")
@@ -88,6 +98,7 @@ class SinglyLinkedList():
     def delete(self):
         self.head = self.tail = None
 
+# Test out various class methods
 linked_list = SinglyLinkedList()
 linked_list.insert(1, -1)
 linked_list.insert(2, -1)
@@ -113,3 +124,20 @@ print(linked_list)
 
 linked_list.delete()
 print(linked_list)
+print()
+
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Test out reverse() method (LeetCode 206)
+linked_list = SinglyLinkedList()
+for i in range(1, 6): linked_list.insert(i, -1)
+
+print(linked_list)
+print(linked_list.head)
+print(linked_list.tail.value, linked_list.tail.next)
+print()
+
+linked_list.reverse()
+print(linked_list)
+print(linked_list.head)
+print(linked_list.tail.value, linked_list.tail.next)
