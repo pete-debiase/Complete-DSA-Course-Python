@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def print_pairs(array):
     for i in array: # O(n)

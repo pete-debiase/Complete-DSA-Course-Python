@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def sum_of_digits(n):
     """Calculate the sum of the digits of n."""

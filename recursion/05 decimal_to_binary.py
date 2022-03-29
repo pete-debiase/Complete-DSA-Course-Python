@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def decimal_to_binary(n):
     """Convert specified n from decimal to binary."""

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def print_unordered_pairs(array):
     for i in range(0, len(array)): # O(n)

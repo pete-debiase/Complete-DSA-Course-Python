@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def foo(array):
     sum = 0 # O(1)

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 # Which of the following are equivalent to O(n)? Why?
 

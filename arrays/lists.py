@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 """Python list deep dive."""
 
 import numpy as np

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def all_fibonacci(n):
     for i in range(n): # O(n)

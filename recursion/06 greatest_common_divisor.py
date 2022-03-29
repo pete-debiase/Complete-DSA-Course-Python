@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def greatest_common_divisor(a, b):
     """Find the GCD of a and b using Euclidean algorithm."""

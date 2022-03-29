@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def fibonacci(n):
     """Calculate the nth fibonacci number."""

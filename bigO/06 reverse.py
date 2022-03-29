@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def reverse(array):
     for i in range(int(len(array)/2)): # O(n/2)

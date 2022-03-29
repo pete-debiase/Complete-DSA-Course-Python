@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 """Calculate the number of days above the average temperature."""
 
 day_count = int(input("How many days of data to input? "))

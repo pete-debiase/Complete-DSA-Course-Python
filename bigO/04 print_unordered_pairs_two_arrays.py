@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def print_unordered_pairs(arrayA, arrayB):
     for i in range(len(arrayA)): # O(n), where n = len(arrayA)
